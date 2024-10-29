@@ -1,6 +1,6 @@
 /* Start Global Rules */
 .landing {
-  background: url(../images/1\ AmfDWgoWHVAauIpigO8moA.jpg) no-repeat
+  background: url(../images/BackGround.png) no-repeat
     center center fixed;
   background-size: cover;
 }
@@ -9,7 +9,7 @@
   --bg-color: #000;
   --text-color: #fff;
   /* --main-color: #3a6cf4; */
-  --main-color: #473be6;
+  --main-color: #00C834;
   /* --main-color: #1cd438; */
   --second-color: gray;
   --other-color: #12141c;
@@ -185,9 +185,9 @@ li {
   right: -30px;
   top: 100px;
   background-color: var(--main-color);
-
   text-align: center;
   cursor: pointer;
+  display: none;
 }
 
 .settings-box .toggle-settings .fa-gear {
@@ -490,9 +490,9 @@ li {
   transform: scale(0.9);
 }
 
-/* .landing .text i {
-  margin-right: 2px;
-} */
+.landing .text i {
+  /* margin-right: 2px; */
+}
 
 .landing .go-down {
   color: var(--main-color);
@@ -662,14 +662,14 @@ li {
   transform: scale(1.01) translateY(-10px);
 }
 
-/* .services .services-container .box.mobile:hover {
+.services .services-container .box.mobile:hover {
 }
 
 .services .services-container .box.web:hover {
 }
 
 .services .services-container .box.desctop:hover {
-} */
+}
 
 .services .services-container .box img {
   background: #624b4b;
