@@ -9,7 +9,7 @@
   --bg-color: #000;
   --text-color: #fff;
   /* --main-color: #3a6cf4; */
-  --main-color: #00C834;
+  --main-color: #00C834 !important;
   /* --main-color: #1cd438; */
   --second-color: gray;
   --other-color: #12141c;
@@ -37,6 +37,15 @@
     --h2-font: 2.7rem;
     --p-font: 1rem;
   }
+  .landing {
+    background: url(../images/BackGroundResponsive.png) no-repeat
+      center center fixed;
+    background-size: cover;
+  }
+  h4 {
+    display: none;
+  }
+  
 }
 
 html {
