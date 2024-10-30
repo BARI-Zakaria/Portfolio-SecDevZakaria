@@ -267,6 +267,19 @@ else {
   distanceValue = "60px";
 }
 
+//  ~~~~~~~~~~~~~~~ POP UP ~~~~~~~~~~~~~~~
+const viewCertificateButton = document.getElementById('view-certificate');
+const popup = document.getElementById('popup');
+const closePopupButton = document.getElementById('close-popup');
+
+viewCertificateButton.addEventListener('click', () => {
+    popup.style.display = 'block';
+});
+
+closePopupButton.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
 // const sr = ScrollReveal({
 //   origin: "top",
 //   distance: distanceValue,

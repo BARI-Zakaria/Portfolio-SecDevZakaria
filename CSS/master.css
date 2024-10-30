@@ -1,6 +1,7 @@
 /* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .landing {
-  background: url(../images/BackGround.png) no-repeat
+  background: url(../images/BackGround2.png) no-repeat
     center center fixed;
   background-size: cover;
 }
@@ -45,6 +46,12 @@
   h4 {
     display: none;
   }
+  h1 .responseH {
+    display: block;
+  }
+  .responseD {
+    display: none;
+  }
   
 }
 
@@ -53,7 +60,7 @@ html {
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: black;
 }
 
@@ -94,6 +101,10 @@ li {
   .container {
     width: 1200px;
   }
+}
+
+.responseH {
+  display: none;
 }
 
 /*  */
@@ -405,7 +416,7 @@ li {
 }
 
 .landing .text h4 {
-  color: white;
+  color: black;
   font-size: 18px;
   background: var(--main-color);
   width: fit-content;
@@ -421,7 +432,7 @@ li {
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: -1px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -499,9 +510,9 @@ li {
   transform: scale(0.9);
 }
 
-.landing .text i {
-  /* margin-right: 2px; */
-}
+/* .landing .text i {
+  /* margin-right: 2px; 
+} */
 
 .landing .go-down {
   color: var(--main-color);
@@ -595,7 +606,7 @@ li {
   font-size: 3.4rem;
   color: var(--text-color);
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -604,7 +615,7 @@ li {
   margin: 10px 0;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .about .container .content p {
@@ -612,7 +623,7 @@ li {
   color: #777;
   line-height: 35px;
   font-size: 1rem;
-  font-family: "HCo Operator Mono";
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -671,14 +682,14 @@ li {
   transform: scale(1.01) translateY(-10px);
 }
 
-.services .services-container .box.mobile:hover {
+/* .services .services-container .box.mobile:hover {
 }
 
 .services .services-container .box.web:hover {
 }
 
 .services .services-container .box.desctop:hover {
-}
+} */
 
 .services .services-container .box img {
   background: #624b4b;
@@ -747,43 +758,61 @@ li {
 }
 
 .skills .skills-container .box.css:hover {
-  box-shadow: 0 0 20px var(--main-color);
+  box-shadow: 0 0 20px hsl(210, 100%, 50%);
 }
 
 .skills .skills-container .box.js:hover {
   box-shadow: 0 0 20px hsl(50.35deg 100% 50%);
 }
 
-.skills .skills-container .box.sass:hover {
-  box-shadow: 0 0 20px hsl(339.72deg 82.56% 66.27%);
+.skills .skills-container .box.php:hover {
+  box-shadow: 0 0 20px hsl(230, 60%, 50%);
 }
 
-.skills .skills-container .box.react:hover {
-  box-shadow: 0 0 20px hsl(213.86deg 77.1% 74.31%);
+.skills .skills-container .box.mysql:hover {
+  box-shadow: 0 0 20px hsl(200, 100%, 40%);
 }
 
-.skills .skills-container .box.bootstrap:hover {
-  box-shadow: 0 0 20px hsl(261.6deg 51.87% 47.25%);
+.skills .skills-container .box.python:hover {
+  box-shadow: 0 0 20px hsl(210, 60%, 50%);
 }
 
 .skills .skills-container .box.git:hover {
   box-shadow: 0 0 20px hsl(14.3deg 90.68% 53.73%);
 }
 
-.skills .skills-container .box.php:hover {
-  box-shadow: 0 0 20px hsl(186.79deg 100% 41.57%);
+.skills .skills-container .box.elk:hover {
+  box-shadow: 0 0 20px hsl(30, 100%, 50%);
 }
 
-.skills .skills-container .box.node:hover {
-  box-shadow: 0 0 20px #80bd00;
+.skills .skills-container .box.wazuh:hover {
+  box-shadow: 0 0 20px hsl(210, 60%, 40%);
 }
-.skills .skills-container .box.MongoDB:hover {
-  box-shadow: 0 0 20px #80bd00;
+.skills .skills-container .box.pfsense:hover {
+  box-shadow: 0 0 20px hsl(180, 100%, 30%);
 }
 
-.skills .skills-container .box.linux:hover {
-  box-shadow: 0 0 20px hsl(200deg 16.98% 20.78%);
+.skills .skills-container .box.VS:hover {
+  box-shadow: 0 0 20px hsl(200, 100%, 40%);
 }
+
+.skills .skills-container .box.vmware:hover {
+  box-shadow: 0 0 20px hsl(160, 100%, 30%);
+}
+
+.skills .skills-container .box.kali:hover {
+  box-shadow: 0 0 20px hsl(210, 100%, 30%);
+}
+
+.skills .skills-container .box.centos:hover {
+  box-shadow: 0 0 20px hsl(0, 100%, 50%);
+}
+
+.skills .skills-container .box.ubuntu:hover {
+  box-shadow: 0 0 20px hsl(15, 100%, 50%);
+}
+
+/* hsl(160, 100%, 30%) hsl(210, 100%, 30%) hsl(0, 100%, 50%) hsl(15, 100%, 50%) */
 
 .skills .box h4 {
   color: var(--text-color);
@@ -851,6 +880,25 @@ li {
 
 .certificates .card .live a:hover {
   text-decoration: underline;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width */
+  z-index: 9999;
+}
+
+#popup img {
+  width: 100%; /* Make the image fit the width of the popup */
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
 }
 /* ========== End Certificates ==========  */
 /* Start Projects */
@@ -1031,7 +1079,7 @@ li {
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  font-family: Arial, Tahoma;
+  font-family: "Poppins", sans-serif;
 }
 
 /* End Projects */
@@ -1131,7 +1179,7 @@ li {
   line-height: 1.25rem;
   margin: 0;
   letter-spacing: 0.5px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 
@@ -1259,7 +1307,7 @@ li {
   color: var(--text-color);
   font-size: var(--h2-font);
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
 }
 
