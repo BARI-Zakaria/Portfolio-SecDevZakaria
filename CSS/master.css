@@ -861,12 +861,12 @@ li {
 
 .certificates .card h5 {
   font-size: 1rem;
-  color: #555;
+  color: var(--main-color);
   margin-bottom: 8px;
 }
 
 .certificates .card p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #777;
   margin-bottom: 20px;
 }
@@ -877,16 +877,29 @@ li {
 }
 
 .certificates .card .live a {
-  color: #007bff;
+  color: wheat;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
   margin-top: 50px;
+  cursor: pointer;
 }
 
-.certificates .card .live a:hover {
-  text-decoration: underline;
+.certificates .card .live #view {
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  cursor: pointer;
+  margin-right: 50px;
 }
+
+.certificates .card .live a:hover, .certificates .card .live #view:hover{
+  text-decoration: underline;
+  /* background-color: var(--main-color); */
+}
+
 /* Style for the popup overlay */
 .overlay {
   position: fixed;
@@ -906,11 +919,11 @@ li {
   padding: 20px;
   border-radius: 8px;
   max-width: 50%;
-  width: auto; /* Will adjust based on the image size */
+  width: auto; 
 }
 
 .popup img {
-  max-width: 100%; /* Ensures the image fits inside the popup */
+  max-width: 100%;
   height: auto;
 }
 /* ========== End Certificates ==========  */
