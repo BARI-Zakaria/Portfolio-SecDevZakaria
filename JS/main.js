@@ -268,17 +268,17 @@ else {
 }
 
 //  ~~~~~~~~~~~~~~~ POP UP ~~~~~~~~~~~~~~~
-const viewCertificateButton = document.getElementById('view-certificate');
-const popup = document.getElementById('popup');
-const closePopupButton = document.getElementById('close-popup');
+// const viewCertificateButton = document.getElementById('view-certificate');
+// const popup = document.getElementById('popup');
+// const closePopupButton = document.getElementById('close-popup');
 
-viewCertificateButton.addEventListener('click', () => {
-    popup.style.display = 'block';
-});
+// viewCertificateButton.addEventListener('click', () => {
+//     popup.style.display = 'block';
+// });
 
-closePopupButton.addEventListener('click', () => {
-    popup.style.display = 'none';
-});
+// closePopupButton.addEventListener('click', () => {
+//     popup.style.display = 'none';
+// });
 
 // const sr = ScrollReveal({
 //   origin: "top",
