@@ -200,8 +200,6 @@
             <img class="about__img" src="images/ETE.jpg" />
 
           </div>
-          
-
 
           <div class="content about__content">
             <h1>About me</h1>
@@ -230,6 +228,7 @@
       </div>
     </div>
     <!-- ========== End About ========== -->
+
     <!-- ========== Start Services ========== -->
     <div class="services" id="services">
       <div class="container">
@@ -287,6 +286,7 @@
       </div>
     </div>
     <!-- ========== End Services ========== -->
+    
     <!-- ========== Start Skills ========== -->
     <div class="skills" id="skills">
       <div class="container">
@@ -366,86 +366,87 @@
       </div>
     </div>
     <!-- ========== End Skills ========== -->
-<!-- ========== Start Certificates ========== -->
-<div class="certificates" id="certificates">
-  <div class="container">
-    <div class="main-heading">
-      <h2 class="main-title">Certificates</h2>
-      <p>
-        Here are some of the certifications I've earned over the years. These reflect my commitment to continuous learning and staying updated with the latest industry standards. Also, find here some of my Certificates of Recognition as an Events Organizer.
-      </p>
+
+    <!-- ========== Start Certificates ========== -->
+    <div class="certificates" id="certificates">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Certificates</h2>
+          <p>
+            Here are some of the certifications I've earned over the years. These reflect my commitment to continuous learning and staying updated with the latest industry standards. Also, find here some of my Certificates of Recognition as an Events Organizer.
+          </p>
+        </div>
+        <div class="certificates-container">
+          <div class="card">
+            <img src="./images/certificates/THM-ZN6HKEXX2O.png" alt="THM Certificate">
+            <h3>Introduction to Cybersecurity</h3>
+            <h5>Issued by TryHackMe</h5>
+            <p>Date: 7th October 2024</p>
+
+            <div class="live">
+              <a class="view" onclick="openPopup('./images/certificates/THM-ZN6HKEXX2O.png')">View Certificate</a>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/certificates/Introduction_to_Cybersecurity_Badge20241009-7-bhdzpt-1.png" alt="CISCO Certificate">
+            <h3>CISCO Course Completion</h3>
+            <h5>Issued by CISCO NetAcad</h5>
+            <p>Date: 5th October 2023</p>
+
+            <div class="live">
+              <a id="view" class="view" onclick="openPopup('images/certificates/Introduction_to_Cybersecurity_Badge20241009-7-bhdzpt-1.png')">View Certificate</a>
+              <a target="_blank" href="https://www.credly.com/badges/73b07402-861d-4c7b-8d49-19aaa58eec5a/public_url"><i class="fa-solid fa-file-certificate"></i>View Badge</a>
+            </div>
+
+          </div>
+          <div class="card">
+            <img src="./images/certificates/Simplon.jpeg" alt="Web Developement Certificate">
+            <h3>Web Developement</h3>
+            <h5>Issued by Simplon.co</h5>
+            <p>Date: 12th September 2022</p>
+            <div class="live">
+              <a class="view" onclick="openPopup('./images/certificates/Simplon.jpeg')">View Certificate</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/certificates/WorkshopCS_.png" alt="Web Developement Certificate">
+            <h3>Cyber security Workshop</h3>
+            <h5>Issued by IT-WAVE Event</h5>
+            <p>Date: 14th May 2024</p>
+            <div class="live">
+              <a class="view" onclick="openPopup('./images/certificates/WorkshopCS_.png')">View Certificate</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/certificates/LeaderIT-WAVE.png" alt="Web Developement Certificate">
+            <h3>Leader of the Organization Team</h3>
+            <h5>Issued by IT-WAVE Team</h5>
+            <p>Date: 17th May 2024</p>
+            <div class="live">
+              <a class="view" onclick="openPopup('./images/certificates/LeaderIT-WAVE3.png')">View Certificate</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/certificates/SoliHackathon.png" alt="Web Developement Certificate">
+            <h3>Membre of the Organization and Communication team SoliHackathon'22</h3>
+            <h5>Issued by Solicode Tangier | Simplon.co</h5>
+            <p>Date: 25th May 2022</p>
+            <div class="live">
+              <a class="view" onclick="openPopup('./images/certificates/SoliHackathon.png')">View Certificate</a>
+            </div>
+          </div>
+              <!-- Popup overlay -->
+        <div class="overlay" id="overlay" onclick="closePopup()">
+          <div class="popup" onclick="event.stopPropagation()">
+              <img id="popupImage" src="" alt="Certificate">
+          </div>
+      </div>
+        </div>
+      </div>
     </div>
-    <div class="certificates-container">
-      <div class="card">
-        <img src="./images/certificates/THM-ZN6HKEXX2O.png" alt="THM Certificate">
-        <h3>Introduction to Cybersecurity</h3>
-        <h5>Issued by TryHackMe</h5>
-        <p>Date: 7th October 2024</p>
-
-        <div class="live">
-          <a class="view" onclick="openPopup('./images/certificates/THM-ZN6HKEXX2O.png')">View Certificate</a>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="./images/certificates/Introduction_to_Cybersecurity_Badge20241009-7-bhdzpt-1.png" alt="CISCO Certificate">
-        <h3>CISCO Course Completion</h3>
-        <h5>Issued by CISCO NetAcad</h5>
-        <p>Date: 5th October 2023</p>
-
-        <div class="live">
-          <a id="view" class="view" onclick="openPopup('images/certificates/Introduction_to_Cybersecurity_Badge20241009-7-bhdzpt-1.png')">View Certificate</a>
-          <a target="_blank" href="https://www.credly.com/badges/73b07402-861d-4c7b-8d49-19aaa58eec5a/public_url"><i class="fa-solid fa-file-certificate"></i>View Badge</a>
-        </div>
-
-      </div>
-      <div class="card">
-        <img src="./images/certificates/Simplon.jpeg" alt="Web Developement Certificate">
-        <h3>Web Developement</h3>
-        <h5>Issued by Simplon.co</h5>
-        <p>Date: 12th September 2022</p>
-        <div class="live">
-          <a class="view" onclick="openPopup('./images/certificates/Simplon.jpeg')">View Certificate</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./images/certificates/WorkshopCS_.png" alt="Web Developement Certificate">
-        <h3>Cyber security Workshop</h3>
-        <h5>Issued by IT-WAVE Event</h5>
-        <p>Date: 14th May 2024</p>
-        <div class="live">
-          <a class="view" onclick="openPopup('./images/certificates/WorkshopCS_.png')">View Certificate</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./images/certificates/LeaderIT-WAVE.png" alt="Web Developement Certificate">
-        <h3>Leader of the Organization Team</h3>
-        <h5>Issued by IT-WAVE Team</h5>
-        <p>Date: 17th May 2024</p>
-        <div class="live">
-          <a class="view" onclick="openPopup('./images/certificates/LeaderIT-WAVE3.png')">View Certificate</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./images/certificates/SoliHackathon.png" alt="Web Developement Certificate">
-        <h3>Membre of the Organization and Communication team SoliHackathon'22</h3>
-        <h5>Issued by Solicode Tangier | Simplon.co</h5>
-        <p>Date: 25th May 2022</p>
-        <div class="live">
-          <a class="view" onclick="openPopup('./images/certificates/SoliHackathon.png')">View Certificate</a>
-        </div>
-      </div>
-          <!-- Popup overlay -->
-    <div class="overlay" id="overlay" onclick="closePopup()">
-      <div class="popup" onclick="event.stopPropagation()">
-          <img id="popupImage" src="" alt="Certificate">
-      </div>
-  </div>
-    </div>
-  </div>
-</div>
-<!-- ========== End Certificates ========== -->
+    <!-- ========== End Certificates ========== -->
 
 
     <!-- ========== Start My Projects ========== -->
