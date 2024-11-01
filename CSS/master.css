@@ -850,7 +850,6 @@ li {
 }
 .certificates .card img {
   width: 100%;
-
   height: 300px;
   margin-bottom: 15px;
 }
@@ -872,33 +871,47 @@ li {
   margin-bottom: 20px;
 }
 
+.certificates .card .live {
+    text-align: center;
+    margin-top: 50px;
+}
+
 .certificates .card .live a {
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .certificates .card .live a:hover {
   text-decoration: underline;
 }
-
-#popup {
+/* Style for the popup overlay */
+.overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  width: 80%; /* Adjust the width as needed */
-  max-width: 600px; /* Set a maximum width */
-  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-#popup img {
-  width: 100%; /* Make the image fit the width of the popup */
-  max-width: 100%; /* Ensure the image doesn't overflow */
-  height: auto; /* Maintain aspect ratio */
+/* Style for the popup content */
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 50%;
+  width: auto; /* Will adjust based on the image size */
+}
+
+.popup img {
+  max-width: 100%; /* Ensures the image fits inside the popup */
+  height: auto;
 }
 /* ========== End Certificates ==========  */
 /* Start Projects */

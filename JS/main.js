@@ -268,17 +268,16 @@ else {
 }
 
 //  ~~~~~~~~~~~~~~~ POP UP ~~~~~~~~~~~~~~~
-// const viewCertificateButton = document.getElementById('view-certificate');
-// const popup = document.getElementById('popup');
-// const closePopupButton = document.getElementById('close-popup');
+// Function to open the popup
+function openPopup(imageSrc) {
+  document.getElementById('popupImage').src = imageSrc;
+  document.getElementById('overlay').style.display = 'flex';
+}
 
-// viewCertificateButton.addEventListener('click', () => {
-//     popup.style.display = 'block';
-// });
-
-// closePopupButton.addEventListener('click', () => {
-//     popup.style.display = 'none';
-// });
+// Function to close the popup
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+}
 
 // const sr = ScrollReveal({
 //   origin: "top",
