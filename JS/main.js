@@ -103,9 +103,10 @@ function sendMail(event) {
   };
 
   emailjs
-    .send("service_w5vio4r", "template_h8duqwm", parms)
+    .send("service_mb5u1nl", "template_gwg8zyn", parms)
     .then(function () {
       alertify.alert("Email sent successfully!");
+      document.getElementById("contact-form").reset();
     })
     .catch(function (error) {
       console.error("Error sending email:", error);
