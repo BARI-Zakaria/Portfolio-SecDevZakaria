@@ -1017,7 +1017,7 @@ li {
 }
 
 .projects .card ul li {
-  padding: 5px;
+  padding: 7px 3px;
   color: var(--main-color);
   border-radius: 5px;
   margin-left: 8px;
