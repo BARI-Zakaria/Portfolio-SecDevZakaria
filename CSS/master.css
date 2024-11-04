@@ -104,9 +104,18 @@ li {
 }
 
 .responseH {
+  display: block;
+}
+.responseD {
   display: none;
 }
-
+#hello {
+  display: none;
+}
+#welcome {
+  font-size: 15px;
+  margin: 30px 100px 0 100px;
+}
 /*  */
 .whatsapp-button {
   position: fixed;
@@ -377,7 +386,7 @@ li {
 }
 
 .header .main-nav li a.active {
-  color: var(--main-color);
+  /* color: var(--main-color); */
   font-weight: 600;
 }
 
@@ -517,7 +526,7 @@ li {
 .landing .go-down {
   color: var(--main-color);
   position: absolute;
-  bottom: 70px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1117,12 +1126,6 @@ li {
 .articles .articles-container .box:hover {
   transform: scale(1.01) translateY(-5px);
 }
-
-/* @media (min-width: 1200px) {
-    .articles .articles-container .box.popular {
-        top: -20px;
-    }
-} */
 .articles .articles-container .box img {
   width: 100%;
   max-width: 100%;
