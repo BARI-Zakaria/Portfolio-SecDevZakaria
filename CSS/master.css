@@ -781,6 +781,10 @@ li {
   box-shadow: 0 0 20px hsl(14.3deg 90.68% 53.73%);
 }
 
+.skills .skills-container .box.github:hover {
+  box-shadow: 0 0 20px hsl(0, 0%, 13%);
+}
+
 .skills .skills-container .box.elk:hover {
   box-shadow: 0 0 20px hsl(30, 100%, 50%);
 }
@@ -812,6 +816,9 @@ li {
   box-shadow: 0 0 20px hsl(15, 100%, 50%);
 }
 
+.skills .skills-container .box.figma:hover {
+  box-shadow: 0 0 20px hsl(271, 88%, 60%);
+}
 /* hsl(160, 100%, 30%) hsl(210, 100%, 30%) hsl(0, 100%, 50%) hsl(15, 100%, 50%) */
 
 .skills .box h4 {
@@ -1017,7 +1024,7 @@ li {
 }
 
 .projects .card ul li {
-  padding: 7px 3px;
+  padding: 7px 4px;
   color: var(--main-color);
   border-radius: 5px;
   margin-left: 8px;
