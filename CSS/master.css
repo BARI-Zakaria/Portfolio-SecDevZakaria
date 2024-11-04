@@ -1187,8 +1187,8 @@ li {
   color: white;
   font-weight: normal;
 }
-
 /* End Articles */
+
 /* Start contact */
 .contact {
   padding-top: var(--main-padding-top);
@@ -1232,6 +1232,10 @@ li {
   line-height: 30px;
 }
 
+.main-heading #contact {
+  color: white;
+}
+
 .contact .contact-container .contact-list {
   line-height: 2;
   margin-bottom: 3rem;
@@ -1259,95 +1263,43 @@ li {
 
 .contact .contact-from input,
 form textarea {
-  border: 1px solid #4a4a4a;
+  border: 1px solid;
   border-radius: 8px;
-  background: #121314;
+  background: #000;
   outline: none;
   width: 100%;
   padding: 18px;
-  background: #121314;
-  color: #6d7175;
-  font-size: 1rem;
-  font-weight: 600;
   margin-bottom: 0.5rem;
   resize: none;
 }
+input::placeholder, form textarea::placeholder{
+  font-family: 'Poppins', sans-serif;
+  color: wheat;
+  font-size: 0.9rem;
+}
+
 .contact .contact-from input:focus {
-  border-color: var(--main-color);
+  border-color: wheat;
 }
 
 textarea:focus {
-  border-color: var(--main-color);
+  border-color: wheat;
 }
 
 form .btn {
   margin-right: 0px;
 }
-
 /* End contact */
+
 /* Start Footer */
 .footer {
   background-color: var(--bg-color);
-  /* padding: 70px 0 0; */
 }
 
 .footer .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
-}
-
-.footer .box h3 {
-  color: var(--text-color);
-  font-size: 50px;
-  margin: 0 0 20px;
-}
-
-.footer .box .text {
-  font-weight: 700;
-  line-height: 2;
-  color: #b9b9b9;
-}
-
-.footer .box .links li:not(:last-child) {
-  border-bottom: 1px solid #444;
-}
-
-.footer .box .links li {
-  padding: 15px 0;
-  transition: var(--main-transition);
-}
-
-.footer .box .links li:hover {
-  padding-left: 10px;
-}
-
-.footer .box .links li:hover a {
-  color: var(--text-color);
-}
-
-.footer .box .links li a {
-  color: #b9b9b9;
-  transition: var(--main-transition);
-}
-
-.footer .box .links li a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\F101";
-  font-weight: 900;
-  margin-right: 10px;
-  color: var(--main-color);
-}
-
-.footer .footer-gallery img {
-  width: 78px;
-  border: 3px solid var(--text-color);
-  margin: 2px;
-}
-
-.footer .box .social-links a i:hover {
-  transform: scale(1.01) translateY(-5px);
-  box-shadow: 0 0 20px var(--main-color);
 }
 
 .footer .Reserved {
