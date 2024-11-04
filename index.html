@@ -57,13 +57,15 @@
     <script defer src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
     <!-- EmailJS Library for sending emails -->
-    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script defer type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "PxT3bopGK67Wcy0Ha",
-            });
-        })();
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "YOUR_PUBLIC_KEY",
+        });
+      })();
     </script>
         <!-- Structured Data for SEO -->
   <script type="application/ld+json">
@@ -545,7 +547,7 @@
             <img src="images/Projects/OFID.png" alt="" />
             <div class="content">
               <h3>OFID Script Tool</h3>
-              <a class="tag" href="https://medium.com/@SecDev_Zakaria"><span>Published by</span> @SecDev_Zakaria</a>       
+              <a class="tag" href="https://www.linkedin.com/in/zakaria-bari"><span>Published by</span> @Zakaria BARI</a>       
               <span>24 OCT 2024</span>
               <p>
                 OFID (Order Files into Directories) is a script tool designed to organize disorganized files in a folder based on their file extension...
@@ -571,7 +573,7 @@
             <img src="images/Projects/SqlDocker.webp" alt="" />
             <div class="content">
               <h3>MySQL 🐬 Setup with Docker 🐳</h3>
-              <a class="tag" href="https://medium.com/@nadir.inab.dev"><span>Published by</span> @Nadir Inab</a>
+              <a class="tag" href="https://www.linkedin.com/in/nadirinab/"><span>Published by</span> @Nadir Inab</a>
               <span>03 JAN 2024</span>
               <p>
                 Setting up 👨‍💻 a MySQL database for your development environment is a fundamental step in many software projects...
@@ -627,7 +629,7 @@
           "https://github.com/BARI-Zakaria",
           "https://medium.com/@SecDev_Zakaria" -->
           <div class="contact-from">
-            <form class="contact-form" onsubmit="sendMail(event)">
+            <form class="contact-form" >
               <!-- Input for user's Name -->
               <input
                 type="text"
@@ -664,7 +666,7 @@
               ></textarea>
 
               <!-- Submit button -->
-              <button type="submit" class="send-btn btn hire_me">Send</button>
+              <button type="submit" class="send-btn btn hire_me" onclick="sendMail(event)">Send</button>
             </form>
           </div>
         </div>
@@ -685,26 +687,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
     <script src="JS/main.js"></script>
-    <script>
-      function sendMail(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        let parms = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          subject: document.getElementById("subject").value,
-          message: document.getElementById("message").value,
-        };
-
-        emailjs
-          .send("service_d3lxzpk", "template_5xzv7ad", parms)
-          .then(function () {
-            alertify.alert("Email sent successfully!");
-          })
-          .catch(function (error) {
-            console.error("Error sending email:", error);
-          });
-      }
-    </script>
   </body>
 </html>

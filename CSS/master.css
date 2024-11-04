@@ -1270,6 +1270,8 @@ form textarea {
   background: #000;
   outline: none;
   width: 100%;
+  color: white;
+  font-size: 1rem;
   padding: 18px;
   margin-bottom: 0.5rem;
   resize: none;

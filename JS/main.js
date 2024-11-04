@@ -90,5 +90,26 @@ function closePopup() {
 
 //  ~~~~~~~~~~~~~~~ END POP UP ~~~~~~~~~~~~~~~
 
+//  ~~~~~~~~~~~~~~~ START CONTACT ~~~~~~~~~~~~~~~
 
+function sendMail(event) {
+  event.preventDefault(); // Prevent the default form submission
 
+  let parms = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs
+    .send("service_w5vio4r", "template_h8duqwm", parms)
+    .then(function () {
+      alertify.alert("Email sent successfully!");
+    })
+    .catch(function (error) {
+      console.error("Error sending email:", error);
+    });
+}
+
+//  ~~~~~~~~~~~~~~~ END CONTACT ~~~~~~~~~~~~~~~
