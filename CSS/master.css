@@ -44,7 +44,7 @@
     background-size: cover;
   }
   h4 {
-    display: none;
+    display: block;
   }
   h1 .responseH {
     display: block;
@@ -723,8 +723,8 @@ li {
   margin: 0;
   font-size: 14px;
 }
-
 /* End Services */
+
 /* Start Skills */
 .skills {
   padding-top: var(--main-padding-top);
@@ -741,7 +741,6 @@ li {
 .skills .skills-container .box {
   text-align: center;
   background-color: hsl(0deg 0% 9.02%);
-  /* background-color: hsl(200deg 16.98% 20.78%);; */
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 6px;
