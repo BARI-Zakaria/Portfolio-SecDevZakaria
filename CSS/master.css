@@ -1,7 +1,7 @@
 /* Start Global Rules */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .landing {
-  background: url(../images/BackGround2.png) no-repeat
+  background: url(../images//Backgrounds/BackGround2.png) no-repeat
     center center fixed;
   background-size: cover;
 }
@@ -39,7 +39,7 @@
     --p-font: 1rem;
   }
   .landing {
-    background: url(../images/BackGroundResponsive.png) no-repeat
+    background: url(../images/Backgrounds/BackGroundResponsive.png) no-repeat
       center center fixed;
     background-size: cover;
   }
@@ -1196,7 +1196,7 @@ li {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padiing-bottom);
   /* background-color: #121314; */
-  background: url("../images/ContactForm_.png") no-repeat center center fixed !important;
+  background: url("../images//Backgrounds/ContactForm_.png") no-repeat center center fixed !important;
   background-size: cover;
 }
 
