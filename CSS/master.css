@@ -46,13 +46,20 @@
   h4 {
     display: block;
   }
-  h1 .responseH {
-    display: block;
+  .responseH {
+    display: block !important;
   }
   .responseD {
-    display: none;
+    display: none !important;
   }
-  
+  #hello {
+    display: none !important;
+  }
+  #welcome {
+    display: block !important;
+    font-size: 15px;
+    margin: 30px 100px 0 100px;
+  }
 }
 
 html {
@@ -73,6 +80,19 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.responseH {
+  display: none;
+}
+.responseD {
+  display: block;
+}
+#hello {
+  display: block;
+}
+#welcome {
+  display: none;
 }
 
 .container {
@@ -101,21 +121,10 @@ li {
   .container {
     width: 1200px;
   }
+
 }
 
-.responseH {
-  display: block;
-}
-.responseD {
-  display: none;
-}
-#hello {
-  display: none;
-}
-#welcome {
-  font-size: 15px;
-  margin: 30px 100px 0 100px;
-}
+
 /*  */
 .whatsapp-button {
   position: fixed;
