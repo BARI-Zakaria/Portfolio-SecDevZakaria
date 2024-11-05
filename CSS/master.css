@@ -51,6 +51,7 @@
   }
   .responseH {
     display: block !important;
+    font-size: 2.5rem !important;
   }
   .responseD {
     display: none !important;
@@ -65,6 +66,11 @@
     margin-top: 20px;
     width: fit-content;
   }
+  /* .whatsapp-button i {
+    position: fixed;
+    bottom: 76px;
+    right: 30px;
+  } */
 }
 
 html {
