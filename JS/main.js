@@ -207,4 +207,5 @@ function sendMail(event) {
       });
   }
 }
+
 //  ~~~~~~~~~~~~~~~ END CONTACT FORM ~~~~~~~~~~~~~~~
