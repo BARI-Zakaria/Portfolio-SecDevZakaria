@@ -76,6 +76,10 @@
     bottom: 76px;
     right: 30px;
   } */
+  /* RESIZE THE POPUP  */
+.popup {
+  max-width: 90% !important;
+}
 }
 
 html {
@@ -110,10 +114,6 @@ li {
   display: none;
 }
 
-/* RESIZE THE POPUP  */
-.popup {
-  max-width: 90% !important;
-}
 .container {
   padding-left: 15px;
   padding-right: 15px;
