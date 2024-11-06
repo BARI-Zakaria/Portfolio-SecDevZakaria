@@ -66,6 +66,11 @@
     margin-top: 20px;
     width: fit-content;
   }
+  .footer .Reserved {
+    font-size: 15px !important;
+    text-align: left !important;
+    padding: 20px 20px 20px 10px!important;
+  }
   /* .whatsapp-button i {
     position: fixed;
     bottom: 76px;
