@@ -181,7 +181,7 @@ function sendMail(event) {
       isValid = false;
   } 
   else if (checkMessage.includes("?") || checkMessage.includes("!") || checkMessage.includes("@") || checkMessage.includes("#") || checkMessage.includes("§") || checkMessage.includes("/") || checkMessage.includes("^") || checkMessage.includes("<") || checkMessage.includes(">") || checkMessage.includes("%") || checkMessage.includes("$") || checkMessage.includes("~") || checkMessage.includes("&") || checkMessage.includes("(") || checkMessage.includes(")") || checkMessage.includes("°") || checkMessage.includes("+") || checkMessage.includes("-") || checkMessage.includes("*")){
-    messageError[3].innerHTML = "Digits and symbols not allowed*";
+    messageError[3].innerHTML = "Some caracters isn't allowed*";
     messageError[3].style.color = "red";
     messageError[3].style.fontWeight = "bold";
     isValid = false;
