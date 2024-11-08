@@ -49,15 +49,43 @@ span.onclick = function () {
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".main-nav");
 const cancelBtn = document.querySelector(".cancel-btn");
+const menuLinks = document.querySelectorAll(".main-nav a");
+
 menuBtn.onclick = () => {
   menu.classList.add("active");
   menuBtn.classList.add("hide");
 
-  cancelBtn.onclick = () => {
-    menu.classList.remove("active");
-    menuBtn.classList.remove("hide");
-  };
+  // Add a document click listener to close the menu when clicking outside of it
+  document.addEventListener("click", closeMenuOnClickOutside);
 };
+
+// Close the menu when the cancel button is clicked
+cancelBtn.onclick = () => {
+  closeMenu();
+};
+
+// Close the menu when any link in the menu is clicked
+menuLinks.forEach(link => {
+  link.onclick = () => {
+    closeMenu();
+  };
+});
+
+// Function to close the menu
+function closeMenu() {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+
+  // Remove the click outside listener when the menu is closed
+  document.removeEventListener("click", closeMenuOnClickOutside);
+}
+
+// Function to close the menu when clicking outside
+function closeMenuOnClickOutside(event) {
+  if (!menu.contains(event.target) && !menuBtn.contains(event.target) && !cancelBtn.contains(event.target)) {
+    closeMenu();
+  }
+}
 /*~~~~~~~~~~~~~~~ END MENU BUTTON ~~~~~~~~~~~~~~~*/
 
 
