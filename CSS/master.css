@@ -396,7 +396,7 @@ li {
 .header .main-nav li a {
   display: flex;
   padding: 0 22px;
-  font-size: var(--p-font-font);
+  font-size: var(--p-font);
   font-weight: 600;
   color: var(--second-color);
   color: var(--text-color);
