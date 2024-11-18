@@ -75,6 +75,10 @@
 .popup {
   max-width: 90% !important;
 }
+
+.popup-btn {
+  font-size: 13px !important;
+}
 }
 
 html {
@@ -566,7 +570,7 @@ li {
 
 /* End Landing */
 /* Start Stats */
-.stats {
+/* .stats {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padiing-bottom);
   color: white;
@@ -600,7 +604,7 @@ li {
   font-style: italic;
   font-size: 20px;
   font-weight: bold;
-}
+} */
 /* End Stats */
 /* Start About */
 .about {
