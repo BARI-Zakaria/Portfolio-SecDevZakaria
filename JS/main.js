@@ -105,16 +105,35 @@ else {
 /*~~~~~~~~~~~~~~~  ENdSCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
 
 //  ~~~~~~~~~~~~~~~ POP UP ~~~~~~~~~~~~~~~
-// Function to open the popup
+// Function to open the popup Certificats
 function openPopup(imageSrc) {
   document.getElementById('popupImage').src = imageSrc;
   document.getElementById('overlay').style.display = 'flex';
 }
 
-// Function to close the popup
+// Function to close the popup Certificats
 function closePopup() {
   document.getElementById('overlay').style.display = 'none';
 }
+
+// Get elements
+const showPopupBtn = document.getElementById('show-popup-btn');
+const popup = document.getElementById('popupDownload');
+const overlay = document.getElementById('overlayDownload');
+
+// Show the popup when the trigger button is clicked
+showPopupBtn.addEventListener('click', () => {
+  popup.classList.remove('hidden');
+  overlay.classList.remove('hidden'); // Optional: display the overlay
+});
+
+// Close the popup when clicking outside
+overlay.addEventListener('click', () => {
+  popup.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+// Function to close the popup Download
+
 
 //  ~~~~~~~~~~~~~~~ END POP UP ~~~~~~~~~~~~~~~
 
