@@ -150,12 +150,23 @@
             </a>
           </div>
           <a href="mailto:barizakaria.mp@gmail.com" class="btn hire_me">Hire me !</a>
-          <a download target="_blank" href="pdf/Zakaria Bari.pdf" class="btn download">
+
+          <!-- DOWNLOAD CV OPTIONS -->
+          <a download target="_blank" class="btn download" id="show-popup-btn">
             Download CV
             <i class="fa-solid fa-cloud-arrow-down"></i>
           </a>
           <h4 id="welcome">Hi there👋🏽 Welcome to my Portfolio!</h4>
         </div>
+
+        <!-- DOWNLOAD CV OPTIONS -->
+        <div id="popupDownload" class="popup hidden">
+          <a download target="_blank" class="popup-btn" href="pdf/Zakaria Bari(ENG).pdf" onclick="downloadCV('english')">English Version</a>
+          <a download target="_blank" class="popup-btn" href="pdf/Zakaria Bari(FR).pdf" onclick="downloadCV('french')">French Version</a>
+        </div>
+        <div id="overlayDownload" class="popup hidden"></div>
+        <!-- DOWNLOAD CV OPTIONS -->
+
       </div><br>
       <a href="#About Me" class="go-down">
         <i class="fas fa-angle-double-down fa-2x"></i>
@@ -373,7 +384,7 @@
           <div class="card">
             <img src="./images/certificates/THM-ZN6HKEXX2O.png" alt="THM Certificate">
             <h3>Introduction to Cybersecurity</h3>
-            <h5>Issued by TryHackMe</h5>
+            <h5>Issued by TryHackMe.com</h5>
             <p>Date: 7th October 2024</p>
             <div class="live">
               <a class="view" onclick="openPopup('./images/certificates/THM-ZN6HKEXX2O.png')">View Certificate</a>
@@ -383,7 +394,7 @@
           <div class="card">
             <img src="./images/certificates/Introduction_to_Cybersecurity_Badge20241009-7-bhdzpt-1.png" alt="CISCO Certificate">
             <h3>CISCO Course Completion</h3>
-            <h5>Issued by CISCO NetAcad</h5>
+            <h5>Issued by CISCO Networking Academy</h5>
             <p>Date: 5th October 2024</p>
             <div class="live">
               <a id="view" class="view" onclick="openPopup('images/certificates/Introduction_to_Cybersecurity_Badge20241009-7-bhdzpt-1.png')">View Certificate</a>
