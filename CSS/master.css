@@ -872,9 +872,11 @@ li {
 }
 
 .certificates-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
 }
 
 .certificates .card {
