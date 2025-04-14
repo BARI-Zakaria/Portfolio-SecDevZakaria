@@ -866,6 +866,52 @@ li {
 
 
 /* ========== Start Certificates ==========  */
+
+/* ===== Certificate Filters ===== */
+.certificate-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2rem 0 3rem;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background: #222;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  min-width: 120px;
+  text-align: center;
+}
+
+.filter-btn.active, 
+.filter-btn:hover {
+  background: var(--main-color);
+  color: #121314;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 120, 255, 0.3);
+}
+
+/* Animation for filtered cards */
+.certificates-container .card {
+  transition: all 0.4s ease;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.5; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===== CERTIFICATE CARDS ===== */
+
+
 .certificates {
   padding: 60px 0;
   background-color: #121314;
@@ -876,7 +922,7 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .certificates .card {
@@ -887,6 +933,11 @@ li {
   transition: transform 0.3s ease;
   background: hsl(0deg 0% 9.02%);
   object-fit: contain;
+  width: 100%; /* Ensures full grid cell usage */
+  min-width: 300px; /* Matches grid minimum */
+  height: 100%; /* Optional: for equal height */
+  margin: 0; /* Remove any default margins */
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .certificates .card:hover {
   transform: translateY(-10px);

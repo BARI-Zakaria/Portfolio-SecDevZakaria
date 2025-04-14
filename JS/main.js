@@ -104,6 +104,61 @@ else {
 }
 /*~~~~~~~~~~~~~~~  ENdSCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
 
+  // Filter Functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const certCards = document.querySelectorAll('.certificates-container .card');
+
+    // Count certificates per category
+    const countCertificates = () => {
+      const counts = {
+        all: certCards.length,
+        cybersecurity: 0,
+        development: 0,
+        leadership: 0
+      };
+
+      certCards.forEach(card => {
+        const category = card.dataset.category;
+        if (counts.hasOwnProperty(category)) {
+          counts[category]++;
+        }
+      });
+
+      return counts;
+    };
+
+    // Update button labels with counts
+    const updateFilterLabels = (counts) => {
+      filterBtns.forEach(btn => {
+        const filter = btn.dataset.filter;
+        btn.textContent = `${filter.charAt(0).toUpperCase() + filter.slice(1)} (${counts[filter]})`;
+      });
+    };
+
+    // Initialize counts
+    const certificateCounts = countCertificates();
+    updateFilterLabels(certificateCounts);
+
+    // Filter functionality
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        certCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeIn 0.5s ease-out';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+
 //  ~~~~~~~~~~~~~~~ POP UP ~~~~~~~~~~~~~~~
 // Function to open the popup Certificats
 function openPopup(imageSrc) {
