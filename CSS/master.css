@@ -863,6 +863,8 @@ li {
 }
 
 /* End Skills */
+
+
 /* ========== Start Certificates ==========  */
 .certificates {
   padding: 60px 0;
@@ -882,6 +884,7 @@ li {
   flex: 1 1 300px;
   transition: transform 0.3s ease;
   background: hsl(0deg 0% 9.02%);
+  object-fit: contain;
 }
 .certificates .card:hover {
   transform: translateY(-10px);
