@@ -877,14 +877,18 @@ li {
 }
 
 .filter-btn {
-  padding: 8px 20px;
+  padding: 15px 20px;
   background: #222;
   border: 1px solid var(--main-color);
-  border-radius: 30px;
+  border-radius: 10px;
   color: white;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
   font-weight: 500;
+  width: 22%;
+  /* height: 100%; */
   min-width: 120px;
   text-align: center;
 }
@@ -900,13 +904,13 @@ li {
 /* Animation for filtered cards */
 .certificates-container .card {
   transition: all 0.4s ease;
-  animation: fadeIn 0.5s ease-out;
+  animation: normal 0.5s ease-out;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from { opacity: 0.5; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
-}
+} */
 
 
 /* ===== CERTIFICATE CARDS ===== */
@@ -919,25 +923,49 @@ li {
 
 .certificates-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2rem;
   margin-top: 5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .certificates-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  }
+  .filter-btn {
+    padding: 10px 3px;
+    font-weight: 300;
+    font-size: small;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificates-container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+  .filter-btn {
+    padding: 10px 3px;
+    font-weight: 300;
+    font-size: small;
+  }
 }
 
 .certificates .card {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   flex: 1 1 300px;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
   background: hsl(0deg 0% 9.02%);
   object-fit: contain;
-  width: 100%; /* Ensures full grid cell usage */
+  width: 100% !important; /* Ensures full grid cell usage */
   min-width: 300px; /* Matches grid minimum */
   height: 100%; /* Optional: for equal height */
-  margin: 0; /* Remove any default margins */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin: 0 !important; /* Remove any default margins */
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
 }
 .certificates .card:hover {
   transform: translateY(-10px);

@@ -115,7 +115,7 @@ else {
         all: certCards.length,
         cybersecurity: 0,
         development: 0,
-        leadership: 0
+        events: 0
       };
 
       certCards.forEach(card => {
@@ -150,7 +150,7 @@ else {
         certCards.forEach(card => {
           if (filter === 'all' || card.dataset.category === filter) {
             card.style.display = 'block';
-            card.style.animation = 'fadeIn 0.5s ease-out';
+            // card.style.animation = 'fadeIn 0.5s ease-out';
           } else {
             card.style.display = 'none';
           }
