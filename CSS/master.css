@@ -965,11 +965,10 @@ li {
   /* transition: transform 0.3s ease; */
   background: hsl(0deg 0% 9.02%);
   object-fit: contain;
-  width: 100% !important; /* Ensures full grid cell usage */
-  min-width: 300px; /* Matches grid minimum */
-  height: 100%; /* Optional: for equal height */
-  margin: 0 !important; /* Remove any default margins */
-  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+  width: 100% !important;
+  min-width: 300px;
+  height: 100%; 
+  margin: 0 !important; 
 }
 .certificates .card:hover {
   transform: translateY(-10px);
