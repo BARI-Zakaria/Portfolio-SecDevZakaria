@@ -347,9 +347,9 @@ sr.reveal(".certificates-container", { origin: "right" });
 
 sr.reveal(".projects-container", { origin: "left" });
 
-sr.reveal(".about__img", { origin: "bottom" });
+sr.reveal(".about__img", { origin: "left" });
 
-sr.reveal(".about__content", { origin: "top" });
+sr.reveal(".about__content", { origin: "right" });
 
 // sr.reveal(".customer__review", { origin: "right" });
 
