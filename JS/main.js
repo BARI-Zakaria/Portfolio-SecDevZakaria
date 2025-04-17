@@ -331,17 +331,17 @@ else {
 const sr = ScrollReveal({
   origin: "top",
   distance: distanceValue,
-  duration: 1500,
-  delay: 400,
+  duration: 2000,
+  delay: 500,
 });
 
-sr.reveal(".home__image");
+sr.reveal(".landing", { origin: "bottom" });
 
 sr.reveal(".text", { origin: "bottom" });
 
 sr.reveal(".category__box", { interval: 150 });
 
-sr.reveal(".certificate-filters");
+sr.reveal(".certificate-filters", { origin: "left" });
 
 sr.reveal(".certificates-container", { origin: "right" });
 

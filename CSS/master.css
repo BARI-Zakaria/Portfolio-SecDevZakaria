@@ -920,6 +920,7 @@ li {
 
 .certificates {
   padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padiing-bottom);
   /* padding: 60px 0; */
   background-color: #121314;
 }
