@@ -393,7 +393,7 @@ li {
   }
 
   .header .container .main-nav li {
-    margin-top: 20px;
+    margin-top: 6px;
   }
 
   .header .container .main-nav li a {
@@ -917,7 +917,8 @@ li {
 
 
 .certificates {
-  padding: 60px 0;
+  padding-top: var(--main-padding-top);
+  /* padding: 60px 0; */
   background-color: #121314;
 }
 
