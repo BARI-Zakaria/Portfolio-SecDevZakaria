@@ -334,7 +334,6 @@ li {
 
 .header .logo {
   color: var(--text-color);
-
   font-size: 35px;
   font-weight: 600;
   height: 72px;
@@ -398,12 +397,15 @@ li {
 
   .header .container .main-nav li a {
     font-size: 20px;
+    /* padding: 0 10px !important; */
+    left: 0;
   }
 }
 
 .header .main-nav li a {
   display: flex;
-  padding: 0 22px;
+  left: 100px;
+  padding: 0 20px;
   font-size: var(--p-font);
   font-weight: 600;
   color: var(--second-color);
