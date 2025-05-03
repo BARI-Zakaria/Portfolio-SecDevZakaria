@@ -1,7 +1,7 @@
 /* Start Global Rules */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .landing {
-  background: url(../images//Backgrounds/BackGround2.png) no-repeat
+  background: url(../images//Backgrounds/BackGround_.png) no-repeat
     center center fixed;
   background-size: cover;
 }
@@ -39,7 +39,7 @@
     --p-font: 1rem;
   }
   .landing {
-    background: url(../images/Backgrounds/BackGroundResponsive.png) no-repeat
+    background: url(../images/Backgrounds/NewBackground2.png) no-repeat
       center center fixed;
     background-size: cover;
   }
