@@ -1,8 +1,7 @@
 /* Start Global Rules */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .landing {
-  background: url(../images//Backgrounds/BackGround_.png) no-repeat
-    center center fixed;
+  background: url(../images//Backgrounds/MainZakaria.png) no-repeat right ;
   background-size: cover;
 }
 
@@ -39,8 +38,7 @@
     --p-font: 1rem;
   }
   .landing {
-    background: url(../images/Backgrounds/NewBackground2.png) no-repeat
-      center center fixed;
+    background: url(../images/Backgrounds/Main_Zakaria.png) no-repeat center;
     background-size: cover;
   }
   .header .logo {
@@ -697,12 +695,107 @@ li {
 }
 
 /* End About */
+/* Start Experiences */
+
+.experiences {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padiing-bottom);
+  background-color: var(--bg-color);
+  background: #0f0f0f !important;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  border: 1px solid #00ff88;
+  display: inline-block;
+  padding: 12px 30px;
+  letter-spacing: 2px;
+}
+
+/* Slider */
+.experience-slider {
+  overflow: hidden;
+}
+
+.experience-slides {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* Slide */
+.experience-slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Image */
+.experience-image {
+  height: 420px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
+.experience-content {
+  background: #111;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.experience-content h3 {
+  background: #1a1a1a;
+  padding: 12px 20px;
+  font-size: 22px;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.experience-list li{
+  list-style-type: square;
+  color: #cfcfcf;
+  line-height: 3;
+  font-size: 18px;
+}
+
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.slider-dots span {
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.slider-dots span.active {
+  background: #00ff88;
+  transform: scale(1.3);
+}
+/* End Experiences */
 /* Start services */
 .services {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padiing-bottom);
   background-color: var(--bg-color);
-  background: #0f0f0f !important;
+  background: #121314 !important;
 }
 
 .services .services-container {
@@ -837,6 +930,12 @@ li {
   box-shadow: 0 0 20px hsl(160, 100%, 30%);
 }
 
+.skills .skills-container .box.glpi:hover {
+  box-shadow: 0 0 20px hsl(199, 100%, 48%);
+}
+.skills .skills-container .box.jira:hover {
+  box-shadow: 0 0 20px hsl(220, 80%, 50%);
+}
 .skills .skills-container .box.kali:hover {
   box-shadow: 0 0 20px hsl(210, 100%, 30%);
 }
@@ -953,6 +1052,19 @@ li {
     padding: 10px 3px;
     font-weight: 300;
     font-size: small;
+  }
+
+  .experience-slide {
+    grid-template-columns: 1fr;
+    gap: 0px !important;
+  }
+  .experience-content h3 {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .experience-list li {
+    font-size: 15px;
+    line-height: 2;
   }
 }
 

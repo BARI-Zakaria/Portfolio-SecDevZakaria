@@ -89,20 +89,171 @@ function closeMenuOnClickOutside(event) {
 /*~~~~~~~~~~~~~~~ END MENU BUTTON ~~~~~~~~~~~~~~~*/
 
 
-// /*~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
-// const screenWidth = window.innerWidth;
+/*~~~~~~~~~~~~~~~ START EXPERIENCE SLIDES ~~~~~~~~~~~~~~~*/
 
-// let distanceValue;
+// const experiences = [
+//   {
+//     title: "SOC Analyst Intern",
+//     image: "images/soc.jpg",
+//     description:
+//       "Monitoring security alerts, analyzing incidents, and contributing to threat detection using SIEM tools."
+//   },
+//   {
+//     title: "IT Helpdesk Technician",
+//     image: "images/helpdesk.jpg",
+//     description:
+//       "Providing technical support, troubleshooting systems, and ensuring continuity of IT services."
+//   },
+//   {
+//     title: "Web Developer",
+//     image: "images/webdev.jpg",
+//     description:
+//       "Building responsive and secure web applications with modern front-end technologies."
+//   }
+// ];
 
-// if (screenWidth <= 768) {
-//   // If screen width is less than or equal to 768 pixels (e.g., for mobile devices)
-//   distanceValue = "10px"; // Adjusted distance value for smaller screens
-// } // Adjusted distance value for very small screens
-// else {
-//   // For larger screens (e.g., desktops, tablets)
-//   distanceValue = "60px";
-// }
-// /*~~~~~~~~~~~~~~~  ENdSCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
+// const grid = document.getElementById("experiencesGrid");
+
+// experiences.forEach((exp) => {
+//   const card = document.createElement("div");
+//   card.className = "experience-card";
+
+//   card.innerHTML = `
+//     <img src="${exp.image}" alt="${exp.title}">
+//     <h3>${exp.title}</h3>
+//     <p>${exp.description}</p>
+//   `;
+
+//   grid.appendChild(card);
+// });
+
+
+/*~~~~~~~~~~~~~~~ START EXPERIENCE SLIDES ~~~~~~~~~~~~~~~*/
+
+const experiences = [
+  {
+    title: "IT HelpDesk & Regional Backup at MIBTECH",
+    image: "images/EXPERIENCES/MIBTECH.png",
+    description: [
+      "Technical support and user request handling.",
+      "Ticket management systems.",
+      "Installation of software and hardware of internal system.",
+      "Repair of administrative and healthcare equipment."
+    ]
+  },
+  {
+    title: "SOC Analyst Intern at Activeo",
+    image: "images/EXPERIENCES/ACTIVEO.png",
+    description: [
+      "Aquired hands-on experience in deploying and configuring a SIEM tool (Wazuh) for security monitoring and threat detection.",
+      "Demonstrated proficiency in utilizing Wazuh features for log analysis, intrusion detection and incident response.",
+      "Successfully integrated Wazuh with existing security infrastructure to bolster defense mechanisms."
+    ]
+  },
+  {
+    title: "Web Developer Intern at YourAWS",
+    image: "images/EXPERIENCES/YOURAWS.png",
+    description: [
+      "Developed and maintained responsive web applications.",
+      "Learn how to host and migrate websites on AWS services.",
+      "Knowledge of cloud computing and AWS infrastructure technologies such as EC2, S3, and Lambda."
+    ]
+  }
+];
+
+const slidesContainer = document.getElementById("experienceSlides");
+const dotsContainer = document.getElementById("sliderDots");
+
+let currentIndex = 0;
+
+/* Create slides & dots */
+experiences.forEach((exp, index) => {
+  // Slide
+  const slide = document.createElement("div");
+  slide.className = "experience-slide";
+  slide.innerHTML = `
+    <div class="experience-image">
+      <img src="${exp.image}" alt="${exp.title}">
+    </div>
+    <div class="experience-content">
+      <h3>${exp.title}</h3>
+      <ul class="experience-list">
+        ${exp.description.map(desc => `<li>${desc}</li>`).join('')}
+      </ul>
+    </div>
+  `;
+  slidesContainer.appendChild(slide);
+
+  // Dot
+  const dot = document.createElement("span");
+  dot.addEventListener("click", () => showSlide(index));
+  dotsContainer.appendChild(dot);
+  showSlide(0); // Initialize first dot as active
+});
+
+/* Show slide */
+function showSlide(index) {
+  currentIndex = index;
+  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+
+  document.querySelectorAll(".slider-dots span").forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+}
+
+experiences.forEach((exp) => {
+  const slide = document.createElement("div");
+  slide.className = "experience-slide";
+
+  // Image
+  const imageWrapper = document.createElement("div");
+  imageWrapper.className = "experience-image";
+
+  const img = document.createElement("img");
+  img.src = exp.image;
+  img.alt = exp.title;
+  imageWrapper.appendChild(img);
+
+  // Content
+  const content = document.createElement("div");
+  content.className = "experience-content";
+
+  const title = document.createElement("h3");
+  title.textContent = exp.title;
+
+  const ul = document.createElement("ul");
+  ul.className = "experience-list";
+
+  exp.description.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ul.appendChild(li);
+  });
+
+  content.appendChild(title);
+  content.appendChild(ul);
+
+  slide.appendChild(imageWrapper);
+  slide.appendChild(content);
+
+  slidesContainer.appendChild(slide);
+});
+
+/* Init */
+showSlide(0);
+
+
+
+// Optional auto-slide
+setInterval(() => {
+  showSlide((currentIndex + 1) % experiences.length);
+}, 5000);
+/*~~~~~~~~~~~~~~~ END EXPERIENCE SLIDES ~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~ END SLIDER REVIEWS ~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~ CERTIFICATES FILTER ~~~~~~~~~~~~~~~*/
 
   // Filter Functionality
   document.addEventListener('DOMContentLoaded', function() {
@@ -312,7 +463,7 @@ function sendMail(event) {
 
 //  ~~~~~~~~~~~~~~~ END CONTACT FORM ~~~~~~~~~~~~~~~
 
-/*~~~~~~~~~~~~~~~ END SLAIDER REVIEWS ~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~ END SLIDER REVIEWS ~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
 const screenWidth = window.innerWidth;
@@ -345,11 +496,13 @@ sr.reveal(".certificate-filters", { origin: "left" });
 
 sr.reveal(".certificates-container", { origin: "right" });
 
-sr.reveal(".projects-container", { origin: "left" });
+sr.reveal(".projects-container", { origin: "top" });
 
 sr.reveal(".about__img", { origin: "left" });
 
 sr.reveal(".about__content", { origin: "right" });
+
+sr.reveal(".experiences", { origin: "left" });
 
 // sr.reveal(".customer__review", { origin: "right" });
 

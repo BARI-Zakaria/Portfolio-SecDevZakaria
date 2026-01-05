@@ -118,11 +118,11 @@
           <!-- List items for navigation links -->
           <li><a href="#Home" class="active">Home</a></li>
           <li><a href="#About Me">About Me</a></li>
+          <li><a href="#experiences">Experiences</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certificates">Certifs</a></li>
           <li><a href="#Projects">Projects</a></li>
-          <li><a href="#bloge">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -216,6 +216,23 @@
       </div>
     </div>
     <!-- ========== End About ========== -->
+    <!-- ========== Start EXPERIENCE ========== -->
+    <div class="experiences" id="experiences">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Experiences</h2>
+            <p>
+              Here are some of my professional experiences that have helped me grow and develop my skills in the field of cybersecurity, IT and web development.
+            </p>
+            <div class="experience-slider">
+              <div class="experience-slides" id="experienceSlides"></div>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End EXPERIENCE ========== -->
+
 
     <!-- ========== Start Services ========== -->
     <div class="services" id="services">
@@ -227,11 +244,11 @@
           </p>
         </div>
         <div class="services-container category__box">
-          <div class="box mobile">
-            <i class="fa-solid fa-bars-progress"></i>
-            <h6>Task Automation</h6>
+          <div class="box desktop">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h6>Collect and Monitor events</h6>
             <p>
-              I can develop scripts that perform repetitive or routine tasks automatically, reducing manual effort and increasing efficiency.
+              Using SIEM Tools, I can collect, analyze, and correlates log data from across a network in real-time to detect security threats.
             </p>
           </div>
           <div class="box web">
@@ -241,29 +258,28 @@
               Using SOAR Tools, I can build a structured Incident Response approach to identifying, managing, and addressing cybersecurity incidents to minimize damage, recover quickly, and prevent future breaches.
             </p>
           </div>
-          <div class="box desctop">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h6>Collect and Monitor events</h6>
-            <p>
-              Using SIEM Tools, I can collect, analyze, and correlates log data from across a network in real-time to detect security threats.
-            </p>
-            </p>
-          </div>
-          <div class="box desctop">
+          <div class="box desktop">
             <i class="fa-solid fa-network-wired"></i>
             <h6>Network Scan</h6>
             <p>
               To help organizations enhance their network security. Network and Vulnerability Scan serve to identify potential security weaknesses within a network. This scan checks devices, systems, and applications for known vulnerabilities, misconfigurations, and outdated software that could be exploited by attackers.
             </p>
           </div>
-          <div class="box desctop">
+          <div class="box mobile">
+            <i class="fa-solid fa-bars-progress"></i>
+            <h6>Task Automation</h6>
+            <p>
+              I can develop scripts that perform repetitive or routine tasks automatically, reducing manual effort and increasing efficiency.
+            </p>
+          </div>
+          <div class="box desktop">
             <i class="fa-solid fa-desktop"></i>
             <h6>Virtualization</h6>
             <p>
               I can build virtual machines environment with such good configurations.
             </p>
           </div>
-          <div class="box desctop">
+          <div class="box desktop">
             <i class="fa-solid fa-code"></i>
             <h6>Web Development</h6>
             <p>
@@ -286,14 +302,14 @@
         </div>
         <div class="skills-container">
           <!-- SOC ANALYST TOOLS  -->
-          <div class="box wazuh category__box">
-            <img src="icons/Wazuh.png" alt="" />
-            <h4>Wazuh</h4>
-          </div>          
           <div class="box elk category__box">
             <img src="icons/ELK.png" alt="" />
             <h4>ELK</h4>
           </div>
+          <div class="box wazuh category__box">
+            <img src="icons/Wazuh.png" alt="" />
+            <h4>Wazuh</h4>
+          </div>          
           <div class="box velociraptor category__box">
             <img src="icons/Velociraptor.svg" alt="" />
             <h4>Velociraptor</h4>
@@ -317,6 +333,14 @@
           <div class="box centos category__box">
             <img src="icons/CentOS_color_logo.webp" alt="" />
             <h4>CentOS</h4>
+          </div>
+          <div class="box glpi category__box">
+            <img src="icons/glpi.png" alt="" />
+            <h4>GLPI</h4>
+          </div>
+          <div class="box jira category__box">
+            <img src="icons/Jira.png" alt="" />
+            <h4>Jira</h4>
           </div>
           <div class="box python category__box">
             <img src="icons/Python-.png" alt="" />
@@ -448,7 +472,7 @@
 
           <div class="card" data-category="events">
             <img src="./images/certificates/SoliHackathon.png" alt="Web Developement Certificate">
-            <h3>Membre of the Organization and Communication team SoliHackathon'22</h3>
+            <h3>Member of the Organization and Communication team SoliHackathon'22</h3>
             <h5>Issued by Solicode Tangier | Simplon.co</h5>
             <p>Date: 25th May 2022</p>
             <div class="live">
@@ -562,7 +586,7 @@
     <!-- ========== End My Projects ========== -->
 
     <!-- ========== Start Articles ========== -->
-    <div class="articles" id="bloge">
+    <!-- <div class="articles" id="bloge">
       <div class="container">
         <div class="main-heading">
           <h2 class="main-title">Articles</h2>
@@ -611,7 +635,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- ========== End Articles ========== -->
     <!-- ========== Start Contact ========== -->
     <div class="contact" id="contact">
@@ -637,7 +661,7 @@
               <li>
                 <a href="mailto:barizakaria.mp@gmail.com">📩 barizakaria.mp@gmail.com</a>
               </li>
-              <li><a href="tel:+212694167883"> 📞 +212694-167-883</a></li>
+              <li><a href="tel:+212613733853"> 📞 +212613-733-853</a></li>
             </div>
             <div class="contact-icons">
               <a
