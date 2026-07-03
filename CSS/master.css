@@ -42,7 +42,7 @@
     background-size: cover;
   }
   .header .logo {
-    width: fit-content !important;
+    width: 200px !important;
     margin: 10px 0 !important;
   }
   h4 {
