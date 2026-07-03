@@ -42,7 +42,8 @@
     background-size: cover;
   }
   .header .logo {
-    font-size: 25px !important;
+    width: fit-content !important;
+    margin: 10px 0 !important;
   }
   h4 {
     display: block;
@@ -332,7 +333,8 @@ li {
 
 .header .logo {
   color: var(--text-color);
-  font-size: 35px;
+  width: auto;
+  margin: 10px 0;
   font-weight: 600;
   height: 72px;
   display: flex;
